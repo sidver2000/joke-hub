@@ -13,7 +13,7 @@ if (-not $PSScriptRoot) {
     $PSScriptRoot = Split-Path -Parent $MyInvocation.MyCommand.Path
 }
 
-$siteFiles = @("index.html", "styles.css", "script.js")
+$siteFiles = @("index.html", "styles.css", "script.js", "Gemini_Generated_Image_sm4agasm4agasm4a.png")
 
 if (-not (Test-Path -LiteralPath $InstallDir)) {
     New-Item -ItemType Directory -Path $InstallDir -Force | Out-Null
