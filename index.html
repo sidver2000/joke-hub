@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Joke Hub</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Joke Hub</h1>
+      <p>Your friendly place for clean jokes and silly punchlines.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero-card">
+      <div>
+        <h2>Laugh Loud. Share More.</h2>
+        <p>Browse jokes, get a random laugh, or add your own favorite punchline.</p>
+      </div>
+      <div class="hero-media">
+        <img id="heroImage" src="Gemini_Generated_Image_sm4agasm4agasm4a.png" alt="Bank teller checking balance illustration" class="hero-image" />
+        <button id="randomBtn" class="btn btn-primary">Show random joke</button>
+      </div>
+    </section>
+
+    <section class="joke-panel">
+      <h3>Featured joke</h3>
+      <article id="featuredJoke" class="joke-card">Loading jokes...</article>
+    </section>
+
+    <section class="joke-form-panel">
+      <h3>Add a joke</h3>
+      <form id="jokeForm">
+        <label for="setup">Joke setup</label>
+        <input id="setup" name="setup" type="text" placeholder="Why did the chicken..." required />
+
+        <label for="punchline">Punchline</label>
+        <input id="punchline" name="punchline" type="text" placeholder="Because..." required />
+
+        <button type="submit" class="btn btn-secondary">Save joke</button>
+      </form>
+    </section>
+
+    <section class="joke-list-panel">
+      <div class="section-header">
+        <h3>All jokes</h3>
+        <span id="jokeCount">0 jokes</span>
+      </div>
+      <div id="jokeList" class="joke-list"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Built with HTML, CSS, and JavaScript.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
